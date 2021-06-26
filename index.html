@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2doParcialAlvaroVillegas</title>
+    <script  src ="./js/manejadora.js" ></script>
+    <script  src ="./js/persona.js" ></script>
+    <script  src ="./js/ciudadano.js" ></script>
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body id = body >
+
+    <input type="button" id=btnAlta value="Alta">
+    <hr width="90%">
+    <h3 id=h2 >    Filtros</h3>
+    <hr width="90%">
+    
+    <label for="select">    Filtrar por:  </label>
+    <select id=select class ="select" >
+        <option value="Camioneta">Camioneta</option>
+        <option value="Auto">Auto</option>
+        <option value="Todos">Todos</option>
+    </select>
+    
+    <label for="txtPromedio">    Promedio de precio:  </label>
+    <input type="text" id=txtPromedio class="boxes">
+    <input type="button" id=btnPromedio value="Calcular Promedio">
+    
+    <h2 id=h1 >    Campos mostrados</h2>
+    <h3  >    Tildar los campos a mostrar</h3>
+    <hr width="90%">
+    <input type="checkbox" id= cbId checked>
+    <label for="cbId">Id:  </label>
+    
+    <input type="checkbox" id= cbMarca checked>
+    <label for="cbMarca">Marca:  </label>
+    
+    <input type="checkbox" id= cbModelo checked>
+    <label for="cbModelo">Modelo:  </label>
+    
+    <input type="checkbox" id= cbPrecio checked>
+    <label for="cbPrecio">Precio:  </label>
+    <hr width="90%">
+    
+    <h2  id = LV>    Lista de Vehiculos</h2>
+    <hr width="90%">
+
+
+<div class = "form">
+
+    <div class ="list">
+        <table id=table class="table">
+            <tr class="cabecera" id=cabecera>
+                
+            </tr>
+            <tbody id="tbody">
+               
+            </tbody>
+        </table>
+
+</div>
+
+
+</div >
+
+<div id="pop-up" class="popUp"  >
+<h3 id=h3>    Alta Vehiculo</h3>
+<hr width="90%">
+<hr width="90%">
+<form id=form class="overlayCenterChild">
+    <label for="txtMarca">Marca:  </label>
+    <input type="text" id=txtMarca class="boxes">
+    <label for="txtModelo">Modelo:</label>
+    <input type="text" id=txtModelo class="boxes">
+    <label for="txtPrecio">Precio:  </label>
+    <input type="text" id=txtPrecio class="boxes">
+    <label for="txtMarca">    Tipo:  </label>
+    <select id=select class ="select" >
+        <option value="True">Camioneta</option>
+        <option value="False">Auto</option>
+    </select>
+<hr width="90%">
+<input type="button" id=btnCerrar value="Cerrar">
+<input type="button" id=btnAgregar value="Agregar">
+        
+    </form>
+</div>
+
+</body>
+</html>
